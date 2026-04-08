@@ -7,142 +7,150 @@
 
 <style>
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #f5f5f5;
+  font-family: Arial;
+  margin: 0;
+  background: #f5f5f5;
+  text-align: center;
 }
 
 .hero {
-    background: url('https://images.unsplash.com/photo-1505691938895-1758d7feb511') no-repeat center/cover;
-    color: white;
-    padding: 80px 20px;
-}
-
-.hero h1 {
-    font-size: 40px;
-}
-
-.section {
-    padding: 40px 20px;
-}
-
-.property {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    border-radius: 10px;
-}
-
-.property img {
-    width: 100%;
-    border-radius: 10px;
+  background: #111;
+  color: white;
+  padding: 60px 20px;
 }
 
 .btn {
-    display: inline-block;
-    padding: 12px 20px;
-    margin: 10px;
-    background: black;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+  display: inline-block;
+  padding: 12px 18px;
+  margin: 10px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-.btn:hover {
-    background: #444;
+/* Carousel */
+.carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* Navigation */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.section {
+  padding: 40px 20px;
 }
 
 .contact {
-    background: #222;
-    color: white;
-    padding: 30px;
+  background: #222;
+  color: white;
+  padding: 30px;
 }
-
 </style>
 </head>
 
 <body>
 
 <div class="hero">
-    <h1>Ortigas Premium Properties</h1>
-    <p>By Jerry Arcueno – Ortigas Land Agent</p>
+  <h1>Ortigas Premium Properties</h1>
+  <p>By Jerry Arcueno</p>
 
-    <!-- INQUIRE BUTTON -->
-    <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" 
-    target="_blank" class="btn">
-    Inquire Now
-    </a>
+  <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn" target="_blank">
+  Inquire Now
+  </a>
+</div>
+
+<!-- CAROUSEL -->
+<div class="carousel">
+  <div class="slides" id="slides">
+
+    <!-- Empress -->
+    <img src="https://assets.ortigas.com.ph/data/uploads/2019/10/Empress_01.jpg">
+
+    <!-- Galleon -->
+    <img src="https://assets.ortigas.com.ph/data/uploads/2019/07/Galleon_Thumbnail_01.jpg">
+
+    <!-- Olin / Generic Ortigas -->
+    <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
+
+    <!-- Maple -->
+    <img src="https://assets.ortigas.com.ph/data/uploads/2019/02/Maple_at_Verdant_Thumbnail.jpg">
+
+    <!-- Costa Calatagan -->
+    <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+
+  </div>
+
+  <button class="nav-btn prev" onclick="prevSlide()">&#10094;</button>
+  <button class="nav-btn next" onclick="nextSlide()">&#10095;</button>
 </div>
 
 <div class="section">
+  <h2>Book a Private Viewing</h2>
+  <p>No commitment. Experience the units firsthand.</p>
 
-    <h2>Featured Properties</h2>
-
-    <!-- EMPRESS -->
-    <div class="property">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-        <h3>Empress at Capitol Commons</h3>
-        <p>Luxury living in Ortigas with wellness-focused amenities.</p>
-        <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" 
-        target="_blank" class="btn">Inquire Now</a>
-    </div>
-
-    <!-- GALLEON -->
-    <div class="property">
-        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be">
-        <h3>The Galleon Residences</h3>
-        <p>Premium CBD living with strong investment potential.</p>
-        <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" 
-        target="_blank" class="btn">Inquire Now</a>
-    </div>
-
-    <!-- OLIN -->
-    <div class="property">
-        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
-        <h3>Olin Residences</h3>
-        <p>Modern, sustainable, and strategic location.</p>
-        <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" 
-        target="_blank" class="btn">Inquire Now</a>
-    </div>
-
-    <!-- MAPLE -->
-    <div class="property">
-        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
-        <h3>Maple at Verdant Towers</h3>
-        <p>Green, spacious, and family-oriented development.</p>
-        <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" 
-        target="_blank" class="btn">Inquire Now</a>
-    </div>
-
-    <!-- COSTA CALATAGAN -->
-    <div class="property">
-        <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
-        <h3>Costa Calatagan</h3>
-        <p>Beachfront investment and vacation property.</p>
-        <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" 
-        target="_blank" class="btn">Inquire Now</a>
-    </div>
-
+  <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn" target="_blank">
+  Inquire Now
+  </a>
 </div>
 
 <div class="contact">
-    <h2>Contact Jerry Arcueno</h2>
+  <h2>Contact Jerry Arcueno</h2>
 
-    <!-- CALL -->
-    <a href="tel:09071324435" class="btn">Call Now</a>
+  <a href="tel:09071324435" class="btn">Call</a>
 
-    <!-- VIBER -->
-    <a href="viber://chat?number=+639071324435" class="btn">Viber</a>
+  <a href="viber://chat?number=+639071324335" class="btn">Viber</a>
 
-    <!-- MESSENGER -->
-    <a href="https://www.facebook.com/share/1MjnX2VWoB/?mibextid=wwXIfr" target="_blank" class="btn">
-        Messenger
-    </a>
-
+  <a href="https://www.facebook.com/share/1MjnX2VWoB/?mibextid=wwXIfr" class="btn" target="_blank">
+  Messenger
+  </a>
 </div>
 
+<script>
+let index = 0;
+const slides = document.getElementById("slides");
+const totalSlides = slides.children.length;
+
+function showSlide() {
+  slides.style.transform = "translateX(" + (-index * 100) + "%)";
+}
+
+function nextSlide() {
+  index = (index + 1) % totalSlides;
+  showSlide();
+}
+
+function prevSlide() {
+  index = (index - 1 + totalSlides) % totalSlides;
+  showSlide();
+}
+</script>
+
 </body>
-      </html>
+</html>
