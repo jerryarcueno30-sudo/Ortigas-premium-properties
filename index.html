@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ortigas Land Properties | Jerry Arcueno</title>
+<title>Ortigas Land | Jerry Arcueno</title>
 
 <style>
 body {
@@ -24,7 +24,7 @@ body {
   text-align: center;
 }
 
-.property {
+.card {
   background: white;
   margin: 30px auto;
   padding: 20px;
@@ -32,35 +32,11 @@ body {
   border-radius: 10px;
 }
 
-.carousel {
-  position: relative;
-  overflow: hidden;
-}
-
-.slides {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.slides img {
+.carousel img {
   width: 100%;
-  flex-shrink: 0;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
-
-.nav-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.prev { left: 10px; }
-.next { right: 10px; }
 
 .btn {
   display: inline-block;
@@ -87,96 +63,114 @@ body {
   <p>Ortigas Land | Jerry Arcueno</p>
 
   <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn" target="_blank">
-  Inquire Now
+    Inquire Now
   </a>
 </div>
 
 <!-- EMPRESS -->
-<div class="section property">
+<div class="section card">
   <h2>Empress at Capitol Commons</h2>
   <p>Turnover: April 2026</p>
-  <p>Luxury wellness condominium in Ortigas with smart home features and premium amenities.</p>
-
-  <h3>Available Units</h3>
+  <p>
+    A premium luxury condominium offering smart home features, wellness amenities,
+    and a central location in Capitol Commons, Pasig.
+  </p>
 
   <div class="carousel">
-    <div class="slides" id="empSlides">
-      <img src="https://assets.ortigas.com.ph/data/uploads/2019/10/Empress_01.jpg">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-      <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
-    </div>
-    <button class="nav-btn prev" onclick="move('empSlides', -1)">&#10094;</button>
-    <button class="nav-btn next" onclick="move('empSlides', 1)">&#10095;</button>
+    <img src="https://via.placeholder.com/800x400?text=Empress+Exterior">
+    <img src="https://via.placeholder.com/800x400?text=Empress+Interior">
   </div>
 
   <p><b>Studio:</b> ~34–46 sqm</p>
   <p><b>1 Bedroom:</b> ~65–76 sqm</p>
   <p><b>2 Bedroom:</b> ~103–134 sqm</p>
 
-  <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn" target="_blank">Inquire Now</a>
+  <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn">Inquire Now</a>
 </div>
 
 <!-- GALLEON RESIDENCES -->
-<div class="section property">
+<div class="section card">
   <h2>Residences at The Galleon</h2>
   <p>Turnover: 2028</p>
-  <p>Modern mixed-use development in Ortigas Center with premium residential units.</p>
+  <p>
+    A modern mixed-use development in Ortigas Center offering premium residential living
+    within a business district environment.
+  </p>
 
   <div class="carousel">
-    <div class="slides" id="galSlides">
-      <img src="https://assets.ortigas.com.ph/data/uploads/2019/07/Galleon_Thumbnail_01.jpg">
-      <img src="https://images.real.ph/real/uploads/listings/large/listing_66d576923887516_1725265554.jpg">
-    </div>
-    <button class="nav-btn prev" onclick="move('galSlides', -1)">&#10094;</button>
-    <button class="nav-btn next" onclick="move('galSlides', 1)">&#10095;</button>
+    <img src="https://via.placeholder.com/800x400?text=Galleon+Residences+Exterior">
+    <img src="https://via.placeholder.com/800x400?text=Galleon+Residences+Interior">
   </div>
 
   <p><b>1 Bedroom:</b> ~69–74 sqm</p>
   <p><b>2 Bedroom:</b> ~109–114 sqm</p>
 
-  <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn" target="_blank">Inquire Now</a>
+  <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn">Inquire Now</a>
 </div>
 
 <!-- GALLEON OFFICES -->
-<div class="section property">
+<div class="section card">
   <h2>Offices at The Galleon</h2>
   <p>Turnover: April 2026</p>
-  <p>Limited Grade-A office spaces in Ortigas CBD. Ideal for business or investment.</p>
+  <p>
+    Premium Grade-A office spaces designed for businesses in Ortigas CBD.
+    Limited units available.
+  </p>
 
   <div class="carousel">
-    <div class="slides" id="offSlides">
-      <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72">
-      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
-    </div>
-    <button class="nav-btn prev" onclick="move('offSlides', -1)">&#10094;</button>
-    <button class="nav-btn next" onclick="move('offSlides', 1)">&#10095;</button>
+    <img src="https://via.placeholder.com/800x400?text=Galleon+Office+Exterior">
   </div>
 
-  <p>Limited office units available</p>
+  <p>Flexible office sizes depending on requirement</p>
 
-  <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn" target="_blank">Inquire Now</a>
+  <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn">Inquire Now</a>
 </div>
 
 <!-- OLIN -->
-<div class="section property">
-  <h2>Olin</h2>
+<div class="section card">
+  <h2>Olin at Jade Drive</h2>
   <p>Turnover: 2029</p>
-  <p>Modern and sustainable living with studio and 1-bedroom units.</p>
+  <p>
+    A modern residential tower offering studio and 1-bedroom units with
+    efficient layouts and urban convenience.
+  </p>
 
   <div class="carousel">
-    <div class="slides" id="olinSlides">
-      <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
-      <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
-    </div>
-    <button class="nav-btn prev" onclick="move('olinSlides', -1)">&#10094;</button>
-    <button class="nav-btn next" onclick="move('olinSlides', 1)">&#10095;</button>
+    <img src="https://via.placeholder.com/800x400?text=Olin+Exterior">
+    <img src="https://via.placeholder.com/800x400?text=Olin+Interior">
   </div>
 
   <p><b>Studio:</b> ~30–35 sqm</p>
   <p><b>1 Bedroom:</b> ~45–55 sqm</p>
 
-  <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn" target="_blank">Inquire Now</a>
+  <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn">Inquire Now</a>
 </div>
 
 <!-- COSTA -->
-<div class="section property
+<div class="section card">
+  <h2>Costa Calatagan</h2>
+  <p>
+    A beachfront estate in Calatagan, Batangas offering a relaxing lifestyle,
+    vacation homes, and long-term investment potential.
+  </p>
+
+  <div class="carousel">
+    <img src="https://via.placeholder.com/800x400?text=Costa+Beach">
+  </div>
+
+  <p>Beachfront lots and future villa development</p>
+
+  <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn">Inquire Now</a>
+</div>
+
+<!-- CONTACT -->
+<div class="contact">
+  <h2>Contact Jerry Arcueno</h2>
+
+  <a href="tel:09071324435" class="btn">Call</a>
+  <a href="viber://chat?number=+63907132435" class="btn">Viber</a>
+  <a href="https://www.facebook.com/share/1MjnX2VWoB/?mibextid=wwXIfr" class="btn" target="_blank">Messenger</a>
+</div>
+
+</body>
+</html>
