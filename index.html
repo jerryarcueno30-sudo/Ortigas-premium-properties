@@ -3,52 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ortigas Land Properties</title>
+<title>Ortigas Land Properties | Jerry Arcueno</title>
 
 <style>
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   margin: 0;
   background: #f5f5f5;
-  text-align: center;
 }
 
 .hero {
   background: #111;
   color: white;
+  text-align: center;
   padding: 60px 20px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 12px 18px;
-  margin: 10px;
-  background: black;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+.section {
+  padding: 40px 20px;
+  text-align: center;
 }
 
-/* Carousel */
+.property {
+  background: white;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 900px;
+  border-radius: 10px;
+}
+
 .carousel {
   position: relative;
-  max-width: 900px;
-  margin: 40px auto;
   overflow: hidden;
-  border-radius: 10px;
 }
 
 .slides {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease;
 }
 
 .slides img {
   width: 100%;
   flex-shrink: 0;
+  border-radius: 10px;
 }
 
-/* Navigation */
 .nav-btn {
   position: absolute;
   top: 50%;
@@ -63,8 +62,14 @@ body {
 .prev { left: 10px; }
 .next { right: 10px; }
 
-.section {
-  padding: 40px 20px;
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  margin: 10px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .contact {
@@ -79,78 +84,99 @@ body {
 
 <div class="hero">
   <h1>Ortigas Premium Properties</h1>
-  <p>By Jerry Arcueno</p>
+  <p>Ortigas Land | Jerry Arcueno</p>
 
   <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn" target="_blank">
   Inquire Now
   </a>
 </div>
 
-<!-- CAROUSEL -->
-<div class="carousel">
-  <div class="slides" id="slides">
+<!-- EMPRESS -->
+<div class="section property">
+  <h2>Empress at Capitol Commons</h2>
+  <p>Turnover: April 2026</p>
+  <p>Luxury wellness condominium in Ortigas with smart home features and premium amenities.</p>
 
-    <!-- Empress -->
-    <img src="https://assets.ortigas.com.ph/data/uploads/2019/10/Empress_01.jpg">
+  <h3>Available Units</h3>
 
-    <!-- Galleon -->
-    <img src="https://assets.ortigas.com.ph/data/uploads/2019/07/Galleon_Thumbnail_01.jpg">
-
-    <!-- Olin / Generic Ortigas -->
-    <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
-
-    <!-- Maple -->
-    <img src="https://assets.ortigas.com.ph/data/uploads/2019/02/Maple_at_Verdant_Thumbnail.jpg">
-
-    <!-- Costa Calatagan -->
-    <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
-
+  <div class="carousel">
+    <div class="slides" id="empSlides">
+      <img src="https://assets.ortigas.com.ph/data/uploads/2019/10/Empress_01.jpg">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+      <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+    </div>
+    <button class="nav-btn prev" onclick="move('empSlides', -1)">&#10094;</button>
+    <button class="nav-btn next" onclick="move('empSlides', 1)">&#10095;</button>
   </div>
 
-  <button class="nav-btn prev" onclick="prevSlide()">&#10094;</button>
-  <button class="nav-btn next" onclick="nextSlide()">&#10095;</button>
+  <p><b>Studio:</b> ~34–46 sqm</p>
+  <p><b>1 Bedroom:</b> ~65–76 sqm</p>
+  <p><b>2 Bedroom:</b> ~103–134 sqm</p>
+
+  <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn" target="_blank">Inquire Now</a>
 </div>
 
-<div class="section">
-  <h2>Book a Private Viewing</h2>
-  <p>No commitment. Experience the units firsthand.</p>
+<!-- GALLEON RESIDENCES -->
+<div class="section property">
+  <h2>Residences at The Galleon</h2>
+  <p>Turnover: 2028</p>
+  <p>Modern mixed-use development in Ortigas Center with premium residential units.</p>
 
-  <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn" target="_blank">
-  Inquire Now
-  </a>
+  <div class="carousel">
+    <div class="slides" id="galSlides">
+      <img src="https://assets.ortigas.com.ph/data/uploads/2019/07/Galleon_Thumbnail_01.jpg">
+      <img src="https://images.real.ph/real/uploads/listings/large/listing_66d576923887516_1725265554.jpg">
+    </div>
+    <button class="nav-btn prev" onclick="move('galSlides', -1)">&#10094;</button>
+    <button class="nav-btn next" onclick="move('galSlides', 1)">&#10095;</button>
+  </div>
+
+  <p><b>1 Bedroom:</b> ~69–74 sqm</p>
+  <p><b>2 Bedroom:</b> ~109–114 sqm</p>
+
+  <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn" target="_blank">Inquire Now</a>
 </div>
 
-<div class="contact">
-  <h2>Contact Jerry Arcueno</h2>
+<!-- GALLEON OFFICES -->
+<div class="section property">
+  <h2>Offices at The Galleon</h2>
+  <p>Turnover: April 2026</p>
+  <p>Limited Grade-A office spaces in Ortigas CBD. Ideal for business or investment.</p>
 
-  <a href="tel:09071324435" class="btn">Call</a>
+  <div class="carousel">
+    <div class="slides" id="offSlides">
+      <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+    </div>
+    <button class="nav-btn prev" onclick="move('offSlides', -1)">&#10094;</button>
+    <button class="nav-btn next" onclick="move('offSlides', 1)">&#10095;</button>
+  </div>
 
-  <a href="viber://chat?number=+639071324335" class="btn">Viber</a>
+  <p>Limited office units available</p>
 
-  <a href="https://www.facebook.com/share/1MjnX2VWoB/?mibextid=wwXIfr" class="btn" target="_blank">
-  Messenger
-  </a>
+  <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn" target="_blank">Inquire Now</a>
 </div>
 
-<script>
-let index = 0;
-const slides = document.getElementById("slides");
-const totalSlides = slides.children.length;
+<!-- OLIN -->
+<div class="section property">
+  <h2>Olin</h2>
+  <p>Turnover: 2029</p>
+  <p>Modern and sustainable living with studio and 1-bedroom units.</p>
 
-function showSlide() {
-  slides.style.transform = "translateX(" + (-index * 100) + "%)";
-}
+  <div class="carousel">
+    <div class="slides" id="olinSlides">
+      <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
+      <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
+    </div>
+    <button class="nav-btn prev" onclick="move('olinSlides', -1)">&#10094;</button>
+    <button class="nav-btn next" onclick="move('olinSlides', 1)">&#10095;</button>
+  </div>
 
-function nextSlide() {
-  index = (index + 1) % totalSlides;
-  showSlide();
-}
+  <p><b>Studio:</b> ~30–35 sqm</p>
+  <p><b>1 Bedroom:</b> ~45–55 sqm</p>
 
-function prevSlide() {
-  index = (index - 1 + totalSlides) % totalSlides;
-  showSlide();
-}
-</script>
+  <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn" target="_blank">Inquire Now</a>
+</div>
 
-</body>
-</html>
+<!-- COSTA -->
+<div class="section property
