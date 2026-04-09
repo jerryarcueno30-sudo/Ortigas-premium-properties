@@ -1,156 +1,188 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ortigas Land | Jerry Arcueno</title>
+<title>Ortigas Premium Properties | Jerry Arcueno</title>
 
 <style>
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
-  scroll-behavior: smooth;
+}
+
+body {
   color: white;
+  background: #000;
 }
 
 /* NAV */
 nav {
   position: fixed;
-  top: 0;
   width: 100%;
-  background: rgba(0,0,0,0.8);
-  padding: 10px;
+  top: 0;
+  background: rgba(0,0,0,0.85);
+  padding: 12px;
   text-align: center;
-  z-index: 1000;
+  z-index: 999;
 }
 
 nav a {
-  color: white;
-  margin: 10px;
+  color: #fff;
   text-decoration: none;
-  font-size: 14px;
+  margin: 10px;
+  font-size: 13px;
 }
 
 /* SECTIONS */
 .section {
   height: 100vh;
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  background-size: cover;
-  background-position: center;
+  padding: 20px;
 }
 
 .overlay {
-  background: rgba(0,0,0,0.55);
-  padding: 25px;
-  border-radius: 10px;
-  max-width: 90%;
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 600px;
+  text-align: center;
 }
 
+/* TEXT */
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* BUTTONS */
 .btn {
   display: inline-block;
   padding: 12px 18px;
   margin: 8px;
-  background: black;
-  color: white;
+  background: #fff;
+  color: #000;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-weight: bold;
 }
 
+.btn.dark {
+  background: black;
+  color: white;
+  border: 1px solid white;
+}
+
+/* CONTACT */
 .contact {
   background: #111;
   text-align: center;
-  padding: 40px;
+  padding: 50px 20px;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.small {
+  font-size: 12px;
+  opacity: 0.7;
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- NAV -->
 <nav>
+  <a href="#home">Home</a>
   <a href="#empress">Empress</a>
-  <a href="#galleon-res">Galleon Residences</a>
-  <a href="#galleon-off">Galleon Offices</a>
+  <a href="#galleon">Galleon</a>
   <a href="#olin">Olin</a>
   <a href="#costa">Costa</a>
 </nav>
 
 <!-- HERO -->
-<div class="section" style="background-image:url('https://via.placeholder.com/1600x900?text=Ortigas+Premium');">
+<div id="home" class="section" style="background-image:url('https://images.unsplash.com/photo-1600585154526-990dced4db0d');">
   <div class="overlay">
-    <h1>Ortigas Premium Properties</h1>
-    <p>Ortigas Land | Jerry Arcueno</p>
+    <h1>Premium Ortigas Properties</h1>
+    <p>Invest in high-value condominiums and beachfront assets in the Philippines.</p>
+    <p><strong>Handled by Jerry Arcueno</strong></p>
 
-    <a class="btn" href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" target="_blank">
-      Inquire Now
-    </a>
+    <a class="btn" href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" target="_blank">Inquire Now</a>
   </div>
 </div>
 
 <!-- EMPRESS -->
-<div id="empress" class="section" style="background-image:url('https://via.placeholder.com/1600x900?text=Empress');">
+<div id="empress" class="section" style="background-image:url('https://images.unsplash.com/photo-1493809842364-78817add7ffb');">
   <div class="overlay">
     <h2>Empress at Capitol Commons</h2>
-    <p>Turnover: April 2026</p>
-    <p>Studio, 1BR, 2BR luxury units</p>
+    <p><strong>Turnover: April 2026</strong></p>
+    <p>Premium units in one of Ortigas’ most prestigious addresses.</p>
+    <p>Available Units:</p>
+    <p>• Studio (approx. 30–35 sqm)<br>• 1 Bedroom (approx. 55–65 sqm)<br>• 2 Bedroom (approx. 90–120 sqm)</p>
 
-    <a class="btn" href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" target="_blank">Inquire</a>
+    <a class="btn" href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform">Inquire Now</a>
   </div>
 </div>
 
 <!-- GALLEON RES -->
-<div id="galleon-res" class="section" style="background-image:url('https://via.placeholder.com/1600x900?text=Galleon+Residences');">
+<div id="galleon" class="section" style="background-image:url('https://images.unsplash.com/photo-1505691938895-1758d7feb511');">
   <div class="overlay">
     <h2>Residences at The Galleon</h2>
-    <p>Turnover: 2028</p>
-    <p>1BR and 2BR residential units</p>
+    <p><strong>Turnover: 2028</strong></p>
+    <p>Modern luxury living in the heart of Ortigas CBD.</p>
+    <p>Available Units:</p>
+    <p>• 1 Bedroom (approx. 50–60 sqm)<br>• 2 Bedroom (approx. 90–110 sqm)</p>
 
-    <a class="btn" href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" target="_blank">Inquire</a>
-  </div>
-</div>
-
-<!-- GALLEON OFFICES -->
-<div id="galleon-off" class="section" style="background-image:url('https://via.placeholder.com/1600x900?text=Galleon+Offices');">
-  <div class="overlay">
-    <h2>Offices at The Galleon</h2>
-    <p>Turnover: April 2026</p>
-    <p>Grade-A office spaces</p>
-
-    <a class="btn" href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" target="_blank">Inquire</a>
+    <a class="btn" href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform">Inquire Now</a>
   </div>
 </div>
 
 <!-- OLIN -->
-<div id="olin" class="section" style="background-image:url('https://via.placeholder.com/1600x900?text=Olin');">
+<div id="olin" class="section" style="background-image:url('https://images.unsplash.com/photo-1507089947368-19c1da9775ae');">
   <div class="overlay">
     <h2>Olin at Jade Drive</h2>
-    <p>Turnover: 2029</p>
-    <p>Studio and 1BR units</p>
+    <p><strong>Turnover: 2029</strong></p>
+    <p>Smartly designed units for modern urban living.</p>
+    <p>Available Units:</p>
+    <p>• Studio (approx. 25–30 sqm)<br>• 1 Bedroom (approx. 40–50 sqm)</p>
 
-    <a class="btn" href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" target="_blank">Inquire</a>
+    <a class="btn" href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform">Inquire Now</a>
   </div>
 </div>
 
 <!-- COSTA -->
-<div id="costa" class="section" style="background-image:url('https://via.placeholder.com/1600x900?text=Costa+Calatagan');">
+<div id="costa" class="section" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');">
   <div class="overlay">
     <h2>Costa Calatagan</h2>
-    <p>Beachfront Investment</p>
+    <p>Beachfront investment and vacation property.</p>
+    <p>Perfect for passive income and leisure living.</p>
 
-    <a class="btn" href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" target="_blank">Inquire</a>
+    <a class="btn" href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform">Inquire Now</a>
   </div>
 </div>
 
 <!-- CONTACT -->
 <div class="contact">
-  <h2>Contact Jerry Arcueno</h2>
+  <h2>Talk to Your Property Advisor</h2>
 
-  <a href="tel:09071324435" class="btn">Call</a>
+  <a href="tel:09071324435" class="btn">Call Now</a>
   <a href="viber://chat?number=+63907132435" class="btn">Viber</a>
-  <a href="https://www.facebook.com/share/1MjnX2VWoB/?mibextid=wwXIfr" class="btn" target="_blank">Messenger</a>
+  <a href="https://www.facebook.com/share/1MjnX2VWoB/?mibextid=wwXIfr" class="btn dark" target="_blank">Messenger</a>
+
+  <p class="small">© 2026 Ortigas Land | Jerry Arcueno</p>
 </div>
 
 </body>
