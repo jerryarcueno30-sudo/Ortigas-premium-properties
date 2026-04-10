@@ -3,162 +3,169 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ortigas Premium Properties | Jerry Arcueno</title>
+<title>Ortigas Land Properties | Jerry Arcueno</title>
 
 <style>
-* { margin:0; padding:0; box-sizing:border-box; font-family:Arial; }
-
-body { color:white; scroll-behavior:smooth; }
-
-/* NAV */
-nav {
-  position:fixed;
-  width:100%;
-  top:0;
-  background:rgba(0,0,0,0.85);
-  padding:12px;
-  text-align:center;
-  z-index:999;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0a0a;
+  color: white;
 }
 
-nav a {
-  color:white;
-  margin:10px;
-  text-decoration:none;
-  font-size:13px;
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+  url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
 }
 
-/* SECTION */
-.section {
-  height:100vh;
-  background-size:cover;
-  background-position:center;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:20px;
-  text-align:center;
-  position:relative;
+.hero h1 {
+  font-size: 48px;
 }
 
-/* OVERLAY */
-.overlay {
-  background:rgba(0,0,0,0.6);
-  padding:40px;
-  border-radius:12px;
-  max-width:600px;
-}
-
-/* BUTTON */
 .btn {
-  display:inline-block;
-  padding:12px 18px;
-  margin:8px;
-  background:white;
-  color:black;
-  text-decoration:none;
-  border-radius:6px;
-  font-weight:bold;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: gold;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* CONTACT */
-.contact {
-  background:#111;
-  padding:50px;
-  text-align:center;
+section {
+  padding: 80px 10%;
+  display: flex;
+  gap: 50px;
+  align-items: center;
 }
+
+.project:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.project img {
+  width: 55%;
+  border-radius: 12px;
+}
+
+.text-box {
+  width: 45%;
+  background: rgba(0,0,0,0.65);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.contact-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-buttons a {
+  padding: 12px;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+.call { background: #333; }
+.viber { background: #7360F2; }
+.messenger { background: #0084FF; }
+
 </style>
 </head>
 
 <body>
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#empress">Empress</a>
-  <a href="#galleon-res">Galleon Res</a>
-  <a href="#galleon-off">Galleon Office</a>
-  <a href="#olin">Olin</a>
-  <a href="#costa">Costa</a>
-</nav>
-
 <!-- HERO -->
-<div id="home" class="section" style="background-image:url('images/empress-exterior.jpg');">
-  <div class="overlay">
-    <h1>Ortigas Premium Properties</h1>
-    <p>Luxury Condominiums & Investment Opportunities</p>
-    <p><strong>Jerry Arcueno</strong></p>
-
-    <a class="btn" href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform">Inquire Now</a>
-  </div>
-</div>
+<section class="hero">
+  <h1>Luxury Properties in Ortigas & Beyond</h1>
+  <p>Handled by Jerry Arcueno | Ortigas Land Specialist</p>
+  <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn">Inquire Now</a>
+</section>
 
 <!-- EMPRESS -->
-<div id="empress" class="section" style="background-image:url('images/empress-lobby.jpg');">
-  <div class="overlay">
+<section class="project">
+  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...">
+  <div class="text-box">
     <h2>Empress at Capitol Commons</h2>
-    <p><strong>Turnover: April 2026</strong></p>
-    <p>Premium luxury residence with wellness-focused design.</p>
-
-    <p>Studio • 1BR • 2BR</p>
-
-    <a class="btn" href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform">Inquire Now</a>
+    <p>
+    Turnover: April 2026<br><br>
+    Units: Studio, 1BR, 2BR<br><br>
+    A luxury residential tower in Capitol Commons offering premium finishes, privacy, and direct access to lifestyle hubs. Ideal for both end-users and long-term investors.
+    </p>
+    <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn">Inquire Now</a>
   </div>
-</div>
+</section>
 
 <!-- GALLEON RES -->
-<div id="galleon-res" class="section" style="background-image:url('images/galleon-exterior.jpg');">
-  <div class="overlay">
+<section class="project">
+  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...">
+  <div class="text-box">
     <h2>Residences at The Galleon</h2>
-    <p><strong>Turnover: 2028</strong></p>
-    <p>Modern residential tower in Ortigas CBD.</p>
-
-    <p>1BR • 2BR Units</p>
-
-    <a class="btn" href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform">Inquire Now</a>
+    <p>
+    Turnover: 2028<br><br>
+    Units: 1BR, 2BR<br><br>
+    Located in Ortigas CBD, perfect for professionals and investors seeking strong rental demand and appreciation.
+    </p>
+    <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn">Inquire Now</a>
   </div>
-</div>
+</section>
 
 <!-- GALLEON OFFICE -->
-<div id="galleon-off" class="section" style="background-image:url('images/galleon-office.jpg');">
-  <div class="overlay">
+<section class="project">
+  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...">
+  <div class="text-box">
     <h2>Offices at The Galleon</h2>
-    <p><strong>Turnover: April 2026</strong></p>
-    <p>Grade-A office investment in Ortigas Center.</p>
-
-    <a class="btn" href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform">Inquire Now</a>
+    <p>
+    Turnover: April 2026<br><br>
+    Limited Units Available<br><br>
+    Prime Ortigas CBD office spaces designed for corporate use and investment with strong leasing demand.
+    </p>
+    <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn">Inquire Now</a>
   </div>
-</div>
+</section>
 
 <!-- OLIN -->
-<div id="olin" class="section" style="background-image:url('images/olin.jpg');">
-  <div class="overlay">
+<section class="project">
+  <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+  <div class="text-box">
     <h2>Olin at Jade Drive</h2>
-    <p><strong>Turnover: 2029</strong></p>
-    <p>Efficient and modern urban units.</p>
-
-    <p>Studio • 1BR</p>
-
-    <a class="btn" href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform">Inquire Now</a>
+    <p>
+    Turnover: 2029<br><br>
+    Units: Studio, 1BR<br><br>
+    A modern and accessible condo perfect for first-time investors and rental income opportunities.
+    </p>
+    <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn">Inquire Now</a>
   </div>
-</div>
+</section>
 
 <!-- COSTA -->
-<div id="costa" class="section" style="background-image:url('images/costa.jpg');">
-  <div class="overlay">
+<section class="project">
+  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+  <div class="text-box">
     <h2>Costa Calatagan</h2>
-    <p>Beachfront investment opportunity</p>
-
-    <a class="btn" href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform">Inquire Now</a>
+    <p>
+    Beachfront property in Batangas perfect for vacation homes or Airbnb investment with strong tourism demand.
+    </p>
+    <a href="https://docs.google.com/forms/d/1crpjax_Gj99vJSM4xENr4hCF7voJ9-Mw7_rK8CHvwpY/viewform" class="btn">Inquire Now</a>
   </div>
-</div>
+</section>
 
 <!-- CONTACT -->
-<div class="contact">
-  <h2>Contact Jerry Arcueno</h2>
-
-  <a href="tel:09071324435" class="btn">Call</a>
-  <a href="viber://chat?number=+63907132435" class="btn">Viber</a>
-  <a href="https://www.facebook.com/share/1MjnX2VWoB/?mibextid=wwXIfr" class="btn" target="_blank">Messenger</a>
+<div class="contact-buttons">
+  <a href="tel:09071324435" class="call">Call</a>
+  <a href="viber://chat?number=09071324435" class="viber">Viber</a>
+  <a href="https://www.facebook.com/share/1MjnX2VWoB/?mibextid=wwXIfr" class="messenger">Messenger</a>
 </div>
 
 </body>
